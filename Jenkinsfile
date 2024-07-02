@@ -14,9 +14,7 @@ pipeline {
     }
     post {
     	success {
-        	mail to: 'fanzexin@insta360.com',
-             	subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-             	body: "Something is wrong with ${env.BUILD_URL}"
+             echo 'build success'
     	}
   }
 }

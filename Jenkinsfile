@@ -11,11 +11,6 @@ pipeline {
 		'''
             }
         }
-	stage('build check') {
-            steps {
-                input "Does the build look ok?"
-            }
-        }
     }
     post {
     	success {
